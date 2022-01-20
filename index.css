@@ -42,6 +42,9 @@ body{
     left: 30%;
 }
 
+.item .three{
+    transform: translate(-30%, -50%);
+}
 .item .content h1{
     font-size: 48px;
     font-weight: 700;
@@ -85,11 +88,12 @@ nav{
 }
 
 nav img{
-    width: 90px;
+    width: 280px;
     height: 90px;
     cursor: pointer;
-    border-radius: 100%;
     image-rendering: pixelated;
+    background-color: transparent;
+    border-radius: 4px;
 }
 
 nav ul li{
@@ -114,17 +118,206 @@ nav ul li::after{
     left: 0;
     bottom: 0px;
     height: 3px;
-    background: rgb(51, 41, 41);
+    background: rgb(238, 238, 238);
     bottom: -10px;
     width: 0;
     transition: 0.5s;
 }
 
 nav ul li:hover{
-    background-color: aliceblue;
+    background-color: white;
     border-radius: 6px;
 }
 
 nav ul li:hover::after{
     width: 100%;
+}
+
+section{
+    position: relative;
+    width: 75%;
+    padding: 50px 40px;
+    margin: auto;
+}
+
+.about h1{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.about p{
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.about .boldText{
+    font-weight: 700;
+}
+
+.services {
+    position: relative;
+    width: 100%;
+    background-color: rgb(248, 245, 245);
+}
+
+.services ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services li{
+    list-style: none;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    align-self: stretch;
+}
+
+.services li img{
+    height: 100px;
+    width: 100px;
+    border-radius: 5%;
+}
+
+.services li h6{
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+.services li p{
+    text-overflow: ellipsis;
+    padding: 15px 0 30px 0;
+    margin: 0 20px;
+    font-size: 1em;
+    color: #303030;
+}
+
+.services li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(92, 197, 223);
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border: 2px solid rgb(57, 57, 59);
+    padding: 10px 0px;
+    border-radius: 4px;
+}
+.services li a pre{
+    position: relative;
+    left: -15px;
+}
+
+.services li a:hover pre{
+    transition: 0.5s;
+    left: 20px;
+}
+
+
+.careers{
+    background-image: url(./assets/images/Massive-Dynamic-4-2.jpg);
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.careers .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.careers .content h3{
+    font-size:xx-large;
+    color: rgb(197, 194, 194);
+}
+
+.careers .content h6{
+    font-style: italic;
+    padding-top: 10px;
+    font-size: small;
+    color: rgb(160, 160, 160);
+}
+
+.careers .content p{
+    font-size: large;
+    color: rgb(212, 212, 212);
+    margin: 20px auto;
+}
+
+.contact{
+    background-image: url(./assets/images/Massive-Dynamic-6-2.jpg);
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contact .content{
+    width: 50%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 400px;
+    color: #fff;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.contact .content p{
+    line-height: 2em;
+    font-weight: 400;
+}
+
+.contact .content input{
+    margin: 0 auto;
+    padding: 15px 20px;
+    width: 60%;
+    border-radius: 50px;
+    border-style: none;
+    outline: none;
+    font-size: 1em;
+}
+
+.contact .content input:placeholder-shown{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .2em;
+}
+.contact .content button{
+    padding: 10px;
+    background-color: rgb(201, 248, 252);
+    border-radius: 5px;
+    border-style: none;
+    width: 25%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .1em;
+    font-size: 14px;
+    cursor: pointer;
+    vertical-align: baseline;
 }
