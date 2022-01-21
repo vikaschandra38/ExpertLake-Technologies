@@ -13,26 +13,29 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css"
+        integrity="sha512-gRH0EcIcYBFkQTnbpO8k0WlsD20x5VzjhOA1Og8+ZUAhcMUCvd+APD35FJw3GzHAP3e+mP28YcDJxVr745loHw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
     <div class="owl-container" id="#home">
         <div class="owl-carousel owl-theme">
-            <div class="item" style="height:100vh"><img src="./assets/images/img1.jpg" alt="image">
+            <div class="item"><img src="./assets/images/img1.jpg" alt="image">
                 <div class="content">
                     <h1>Easiest Way to <br>Success</h1>
                     <p>We understand the uniqueness of your entity <br>so as your business</p>
                     <button type="button">OUR SERVICES</button>
                 </div>
             </div>
-            <div class="item" style="height:100vh"><img src="./assets/images/img2.jpg" alt="image">
+            <div class="item"><img src="./assets/images/img2.jpg" alt="image">
                 <div class="content two">
                     <h1>Best Way to <br>grow your Brand</h1>
                     <p>Business Consulting Services focus on defining, optimizing  <br>and aligning our Client's Business Strategies with IT initiatives.</p>
                     <button type="button">MORE ABOUT US</button>
                 </div></div>
-            <div class="item" style="height:100vh"><img src="./assets/images/img3.jpg" alt="image">
+            <div class="item"><img src="./assets/images/img3.jpg" alt="image">
                 <div class="content three">
                     <h1>What Success <br>means to US</h1>
                     <p style="color:rgb(255, 255, 255)">Business Consulting Services focus on defining, optimizing  <br>and aligning our Client's Business Strategies with IT initiatives.</p>
@@ -42,14 +45,23 @@
     </div>
     <nav>
         <img src="./assets/images/logo-dup1.PNG" alt="Logo">
-        <ul>
+        <ul class="navUl">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#services">Services</a>
+                <div class="sub-list">
+                        <a href="#">USA</a>
+                        <a href="#">India</a>
+                        <a href="#">Canada</a>
+                </div>
+            </li>
             <li><a href="#careers">Careers</a></li>
             <li><a href="#client">Client</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="menu-icon">
+            <i class="fas fa-bars" id="menu-btn"></i>
+        </div>
     </nav>
     <section class="about" id="about">
         <h1><span class="boldText">Services</span> We Provide</h1>
@@ -129,6 +141,34 @@
             <button type="button">Subscribe</button>
         </div>
     </div>
+    <footer>
+        <div class="content">
+            <div>
+                <h3>About Us</h3>
+                <p>Spark Lync technologies Inc. is a global IT service provider and founded to assist corporation better manage their operation, through a cost-effective combination of professional services and technology.
+                </p>
+                <!-- <button>Know More</button> -->
+            </div>
+            <div>
+                <h3>Services</h3>
+                <ul class="footer-services">
+                    <li><a href="#">IT CONSULTING</a></li>
+                    <li><a href="#">SOFTWARE DEVELOPMENT</a></li>
+                    <li><a href="#">DATA WAREHOUSING</a></li>
+                    <li><a href="#">SOFTWARE TESTING</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact Info</h3>
+                <address class="map">
+                    <p>4145 North Service Road, 2nd Floor,</p>
+                    <p>Burlington, ON, Canada, L7L 6A3</p>
+                    <p>Phone: (365) 292-5466</p>
+                    <p>E-Mail: info@sparklynctechnologies.com</p>
+                </address>
+            </div>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
